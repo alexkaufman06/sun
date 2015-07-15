@@ -13,10 +13,8 @@ sun.controller('SunCtrl',function($scope, $interval){
     function(newValue, oldValue) {
       if (newValue === 100) {
         $interval($scope.sepCounterDown, 100, 100);
-      } else {
-        if (newValue === 0) {
+      } else if (newValue === 0) {
           $interval($scope.sepCounterUp, 100, 100);
-        }
       }
     }
   );
@@ -33,10 +31,8 @@ sun.controller('SunCtrl',function($scope, $interval){
     function(newValue, oldValue) {
       if (newValue === 360) {
         $interval($scope.hueCounterDown, 100, 360);
-      } else {
-        if (newValue === 0) {
+      } else if (newValue === 0) {
           $interval($scope.hueCounterUp, 100, 360);
-        }
       }
     }
   );
@@ -53,10 +49,8 @@ sun.controller('SunCtrl',function($scope, $interval){
     function(newValue, oldValue) {
       if (newValue === 5000) {
         $interval($scope.satCounterDown, 1, 5000);
-      } else {
-        if (newValue === 0) {
+      } else if (newValue === 0) {
           $interval($scope.satCounterUp, 1, 5000);
-        }
       }
     }
   );
@@ -73,10 +67,8 @@ sun.controller('SunCtrl',function($scope, $interval){
     function(newValue, oldValue) {
       if ( newValue === 100) {
         $interval($scope.invCounterDown, 50, 100);
-      } else {
-        if (newValue === 0) {
+      } else if (newValue === 0) {
           $interval($scope.invCounterUp, 50, 100);
-        }
       }
     }
   );
