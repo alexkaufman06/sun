@@ -2,7 +2,7 @@
 <html lang="en" ng-app="sun">
   <head>
     <meta charset="utf-8">
-    <title>Blarg!</title>
+    <title>Sun!</title>
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <script src="js/lib/angular.js"></script>
     <script src="js/app.js"></script>
@@ -16,7 +16,10 @@
                 top: -5px;
                 left: -5px;
                 background-size: cover;
-                -webkit-filter: sepia({{sun.sep}}%) invert({{sun.inv}}%) saturate({{sun.sat}}%) hue-rotate({{sun.hue}}deg);">
+                -webkit-filter: sepia({{sun.sep}}%)
+                                invert({{sun.inv}}%)
+                                saturate({{sun.sat}}%)
+                                hue-rotate({{sun.hue}}deg);">
     </div>
   </body>
 </html>
