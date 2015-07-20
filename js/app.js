@@ -1,1 +1,1 @@
-var sun = angular.module('sun', []);
+var sun = angular.module('sun', ['ngAnimate', 'mgcrea.ngStrap']);
