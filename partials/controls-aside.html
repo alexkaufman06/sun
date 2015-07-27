@@ -3,10 +3,17 @@
     <div class="aside-content">
       <div class="aside-header">
         <button type="button" class="close" ng-click="$hide()">&times;</button>
-        <h3 class="aside-title">Animation Controls</h3>
+        <h3 class="aside-title">Filter Controls</h3>
       </div>
       <div class="aside-body">
-        <h4>-Future Controls for Sun</h4>
+        <h4>Sepia</h4>
+        <input class="form-control" type="range" min="0" max="100" ng-model="sun.sep">
+        <h4>Saturation</h4>
+        <input class="form-control" type="range" min="0" max="5000" ng-model="sun.sat">
+        <h4>Invert</h4>
+        <input class="form-control" type="range" min="0" max="100" ng-model="sun.inv">
+        <h4>Hue</h4>
+        <input class="form-control" type="range" min="0" max="360" ng-model="sun.hue">
       </div>
       <div class="aside-footer">
         <p class="text-left">By: Alex Kaufman</p>
