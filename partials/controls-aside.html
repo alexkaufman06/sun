@@ -7,13 +7,29 @@
       </div>
       <div class="aside-body">
         <h4>Sepia</h4>
-        <input class="form-control" type="range" min="0" max="100" ng-model="sun.sep">
+        <div id="slider">
+          <input class="form-control" type="range" min="0" max="100" ng-model="sun.sep">
+          <span class="highlight"></span>
+          <output id="rangevalue">{{sun.sep}}</output>
+        </div>
         <h4>Saturation</h4>
-        <input class="form-control" type="range" min="0" max="5000" ng-model="sun.sat">
+        <div id="slider">
+          <input class="form-control" type="range" min="0" max="5000" ng-model="sun.sat">
+          <span class="highlight"></span>
+          <output id="rangevalue">{{sun.sat}}</output>
+        </div>
         <h4>Invert</h4>
-        <input class="form-control" type="range" min="0" max="100" ng-model="sun.inv">
+        <div id="slider">
+          <input class="form-control" type="range" min="0" max="100" ng-model="sun.inv">
+          <span class="highlight"></span>
+          <output id="rangevalue">{{sun.inv}}</output>
+        </div>
         <h4>Hue</h4>
-        <input class="form-control" type="range" min="0" max="360" ng-model="sun.hue">
+        <div id="slider">
+          <input class="form-control" type="range" min="0" max="360" ng-model="sun.hue">
+          <span class="highlight"></span>
+          <output id="rangevalue">{{sun.hue}}</output>
+        </div>
       </div>
       <div class="aside-footer">
         <p class="text-left">By: Alex Kaufman</p>
